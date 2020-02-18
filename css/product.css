@@ -1,0 +1,373 @@
+body {
+    margin: auto;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top:0;
+    padding-top: 10px;
+    padding-left:20px;
+    width:100%;
+    height: 50px;
+    line-height: 30px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+.logo {
+    font-family: 'tangerine', serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.nav-link {
+    margin-right:40px;
+    margin-top:40px;
+    text-decoration: none;
+    color:black;
+}
+
+.nav-link:hover {
+    color:white;
+    font-size: 20px;
+}
+
+#about {
+margin-top:100px;
+border-bottom:5px solid darkorange ;
+}
+
+#video {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 30px;
+}
+
+blockquote {
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom:5px solid darkorange ;
+}
+
+#input {
+    margin-right:30px;
+}
+
+#submit {
+    background:gold;
+    border:none;
+    width:120px;
+    height:30px;
+    color:blue;
+}
+
+#sub {
+    padding-top: 5px;
+}
+
+#email {
+    height:25px;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#shirts, #sweats, #pants, #outerwears {
+    height:300px;
+    width:22%;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 40px;
+}
+
+#shirts {
+    background-image: url(../img/8.jpg) ;
+    background-size: 100% 100%;
+}
+#shirts:hover {
+    background-image: url(../img/1.jpg) ;
+    background-size: 100% 100%;
+}
+#sweats {
+    background-image: url(../img/7.jpg);
+    background-size: 100% 100%;
+}
+#sweats:hover {
+    background-image: url(../img/6.jpg);
+    background-size: 100% 100%;
+}
+#pants {
+    background-image: url(../img/3.jpg);
+    background-size: 100% 100%;
+}
+#pants:hover {
+    background-image: url(../img/2.jpg);
+    background-size: 100% 100%;
+}
+#outerwears{
+    background-image: url(../img/4.jpg);
+    background-size: 100% 100%;
+}
+#outerwears:hover {
+    background-image: url(../img/5.jpg);
+    background-size: 100% 100%;
+}
+
+.prod {
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    margin:0 auto;
+    padding-top: 130px;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right:30px;
+    padding-left: 30px;
+    color:antiquewhite;
+    background-color: darkorange;
+}
+
+#foots {
+    margin-top: 15px;
+}
+.foot {
+    text-decoration: none;
+    color:antiquewhite;
+    padding-left: 20px;
+}
+
+@media (max-width:1200px) {
+    #shirts, #sweats, #pants, #outerwears {
+        height:250px;
+        width:20%;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 35px;
+    }
+
+    .prod {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        margin:0 auto;
+        padding-top: 110px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:1024px) {
+    #shirts, #sweats, #pants, #outerwears {
+        height:200px;
+        width:20%;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 30px;
+    }
+
+    .prod {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        margin:0 auto;
+        padding-top: 90px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:900px) {
+    #shirts, #sweats, #pants, #outerwears {
+        height:180px;
+        width:20%;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 25px;
+    }
+
+    .prod {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        margin:0 auto;
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:768px) {
+    #shirts, #sweats, #pants, #outerwears {
+        height:150px;
+        width:20%;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 25px;
+    }
+
+    .prod {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        margin:0 auto;
+        padding-top: 60px;
+        box-sizing: border-box;
+    }
+
+    #video {
+        width:500px;
+    }
+
+    #input {
+        margin-right:15px;
+    }
+
+    #form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        border-bottom:5px solid darkorange ;
+    }
+}
+
+@media (max-width:600px) {
+    #shirts, #sweats, #pants, #outerwears {
+        height: 280px;
+        width:300px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 35px;
+    }
+
+    .prod {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        margin:0 auto;
+        box-sizing: border-box;
+        padding-top:100px;
+    }
+
+    #video {
+        width:400px;
+    }
+
+    #form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        border-bottom:5px solid darkorange ;
+    }
+
+    #products {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        padding: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    #shirts, #sweats, #pants, #outerwears {
+        height: 280px;
+        width:300px;
+        text-align: center;
+        color: antiquewhite;
+        font-size: 35px;
+    }
+
+    .prod {
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        margin:0 auto;
+        box-sizing: border-box;
+        padding-top:100px;
+    }
+
+    #video {
+        width:290px;
+        height:300px;
+    }
+    #form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-shrink: 3;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        border-bottom:5px solid darkorange ;
+    }
+
+    #products {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        padding: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    header {
+        position: fixed;
+        top:0;
+        width:100%;
+        height: 90px;
+        line-height: 20px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        background-color: antiquewhite;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color:antiquewhite;
+        background-color: darkorange;
+        padding-bottom: 20px;
+        line-height: 10px;
+    }
+
+    #foots {
+        margin-top: 5px;
+    }
+}
+
